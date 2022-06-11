@@ -4,8 +4,13 @@ export const Container = styled.div`
     display: flex;
     justify-content: space-between;
     padding: 20px 50px;
-`
 
+    @media(min-width: 768px) {
+        position: initial;
+        margin: 0;
+    }
+
+`
 
 export const Button = styled.button`
     padding: 10px 30px;

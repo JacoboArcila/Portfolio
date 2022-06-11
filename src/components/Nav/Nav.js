@@ -1,5 +1,6 @@
 import React from 'react';
 import { Theme } from '../../Theme';
+import Burguer from './Burguer';
 import {Container, Button} from './NavStyles';
 
 const Nav = () => {
@@ -7,12 +8,13 @@ const Nav = () => {
     <div>
         <Container>
             <h1>&lt;JacoboArcila /&gt; </h1>
-            <div>
+            <div classname="active">
                 <Button>Home</Button>
                 <Button color={Theme.projects}>Projects</Button>
                 <Button color={Theme.education}>Education</Button>
                 <Button color={Theme.contact}>Contact</Button>
-            </div>    
+            </div>
+            <Burguer />
         </Container>
     </div>
   )
