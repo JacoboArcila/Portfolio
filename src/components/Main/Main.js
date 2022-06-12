@@ -1,12 +1,15 @@
-import React from 'react'
+import React from 'react';
+import SvgMain from './SvgMain';
 
 const Main = () => {
   return (
     <div>
-        <div>
+        <div >
             <h1>Hello! 👋</h1>
             <p>i’m <span>Jacobo Arcila</span>. Frontend Developer. Always learning</p>
         </div>
+        <hr />
+        <SvgMain width="500px" />
     </div>
   )
 }
