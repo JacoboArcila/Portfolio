@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { Theme } from '../../Theme';
 import Burguer from './Burguer';
-import {Container, Button} from './NavStyles';
+import {Container, Button, Bg} from './NavStyles';
 
 const Nav = () => {
   const [active, setActive] = useState(false);
@@ -14,7 +14,7 @@ const Nav = () => {
   return (
     <div>
         <Container>
-            <h1>&lt;JacoboArcila /&gt; </h1>
+            <h1 className='title' >&lt;JacoboArcila /&gt; </h1>
             <div className={`containerButton ${active ? 'active' : ''}`}>
                 <Button>Home</Button>
                 <Button color={Theme.projects}>Projects</Button>

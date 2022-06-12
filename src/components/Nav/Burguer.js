@@ -6,6 +6,7 @@ const Burguer = ({ active, handlerActive }) => {
   return (
     <BurguerDiv>
       <Hamburger
+        className="burger"
         toggled={active}
         onToggle={(toggled) => {
           if (toggled) {
