@@ -9,11 +9,14 @@ import Education from './pages/Education';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 
+import Nav from "./components/Nav/Nav";
+
 function App() {
   return (
     <BrowserRouter>
       <ThemeProvider theme={Theme}>
         <GlobalStyles />
+        <Nav />
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/education' element={<Education />} />
