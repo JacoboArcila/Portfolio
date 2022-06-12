@@ -1,12 +1,20 @@
-import React, {useState} from "react";
-import {BurguerDiv} from './BurguerStyles';
-import { Squash as Hamburger } from 'hamburger-react';
+import React from "react";
+import { BurguerDiv } from "./BurguerStyles";
+import { Squash as Hamburger } from "hamburger-react";
 
-const Burguer = () => {
-    const [isOpen, setOpen] = useState(false)
+const Burguer = ({ active, handlerActive }) => {
   return (
     <BurguerDiv>
-      <Hamburger toggled={isOpen} toggle={setOpen} />
+      <Hamburger
+        toggled={active}
+        onToggle={(toggled) => {
+          if (toggled) {
+            handlerActive();
+          } else {
+            handlerActive();
+          }
+        }}
+      />
     </BurguerDiv>
   );
 };
