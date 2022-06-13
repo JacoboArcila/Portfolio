@@ -19,9 +19,9 @@ function App() {
         <Nav />
         <Routes>
           <Route path='/portfolio' element={<Home />} />
-          <Route path='/education' element={<Education />} />
-          <Route path='/projects' element={<Projects />} />
-          <Route path='/contact' element={<Contact />} />
+          <Route path='/portfolio/education' element={<Education />} />
+          <Route path='/portfolio/projects' element={<Projects />} />
+          <Route path='/portfolio/contact' element={<Contact />} />
         </Routes>
       </ThemeProvider>
     </BrowserRouter>

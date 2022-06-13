@@ -16,16 +16,16 @@ const Nav = () => {
         <Container className={`${active ? 'activeCompo' : ''}`}>
             <h1 className='title' >&lt;JacoboArcila /&gt; </h1>
             <div className={`containerButton ${active ? 'active' : ''}`}>
-                <Link className='link' to='/'>
+                <Link className='link' to='/portfolio'>
                   <Button>Home</Button>
                 </Link>
-                <Link className='link' to='/projects'>
+                <Link className='link' to='/portfolio/projects'>
                   <Button color={Theme.projects}>Projects</Button>
                 </Link>
-                <Link className='link' to='/education'>
+                <Link className='link' to='/portfolio/education'>
                   <Button color={Theme.education}>Education</Button>
                 </Link>
-                <Link className='link' to='/contact'>
+                <Link className='link' to='/portfolio/contact'>
                   <Button color={Theme.contact}>Contact</Button>
                 </Link>
             </div>
