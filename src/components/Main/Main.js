@@ -1,17 +1,52 @@
-import React from 'react';
-import ImgMain from '../../img/ImgMain';
+import React from "react";
+import ImgMain from "../../img/ImgMain";
+import KnowMe from "../../img/KnowMe";
+import { Container, DivKnowMe, DivGet } from "./MainStyles";
 
 const Main = () => {
   return (
     <div>
-        <div >
-            <h1>Hello! 👋</h1>
-            <p>i’m <span>Jacobo Arcila</span>. Frontend Developer. Always learning</p>
+      <Container>
+        <div>
+          <h1 className="hello">Hello! 👋</h1>
+          <p className="text">
+            i’m <span>Jacobo Arcila</span>. Frontend Developer. Always learning
+          </p>
         </div>
         <hr />
         <ImgMain />
-    </div>
-  )
-}
+      </Container>
 
-export default Main
+      <DivKnowMe>
+        <h2 className="titleKnow">Get to know me</h2>
+        <DivGet>
+          <KnowMe />
+          <hr />
+          <div>
+            <p>
+              🔥 Lorem Ipsum is simply dummy text of the printing and
+              typesetting industry. Lorem Ipsum has been the industry's standard
+              dummy text ever since the 1500s, when an unknown printer took a
+              galley of type and scrambled it to make a type specimen book
+            </p>
+            <h3>Language and Tools</h3>
+            <div>
+              <img src="../../img/icons/html.png" alt="html" />
+              <img src="../../img/icons/css.png" alt="css" />
+              <img src="../../img/icons/javaScript-logo.png" alt="js" />
+              <img src="../../img/icons/vue.png" alt="vue" />
+              <img src="../../img/icons/sass.png" alt="sass" />
+              <img src="../../img/icons/react.png" alt="react" />
+              <img src="../../img/icons/nodejs.png" alt="node" />
+              <img src="../../img/icons/git.png" alt="git" />
+              <img src="../../img/icons/postman.png" alt="postMan" />
+              <img src="../../img/icons/java.png" alt="java" />
+            </div>
+          </div>
+        </DivGet>
+      </DivKnowMe>
+    </div>
+  );
+};
+
+export default Main;
