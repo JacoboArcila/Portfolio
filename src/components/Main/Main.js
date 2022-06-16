@@ -1,5 +1,5 @@
 import React from 'react';
-import SvgMain from './SvgMain';
+import ImgMain from '../../img/ImgMain';
 
 const Main = () => {
   return (
@@ -9,7 +9,7 @@ const Main = () => {
             <p>i’m <span>Jacobo Arcila</span>. Frontend Developer. Always learning</p>
         </div>
         <hr />
-        <SvgMain width="500px" />
+        <ImgMain />
     </div>
   )
 }
