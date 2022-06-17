@@ -23,14 +23,14 @@ const Main = () => {
           <KnowMe />
           <hr />
           <div>
-            <p>
+            <p className="text">
               🔥 Lorem Ipsum is simply dummy text of the printing and
               typesetting industry. Lorem Ipsum has been the industry's standard
               dummy text ever since the 1500s, when an unknown printer took a
               galley of type and scrambled it to make a type specimen book
             </p>
-            <h3>Language and Tools</h3>
             <div>
+              <h3 className="language">Language and Tools</h3>
               <img src="../../img/icons/html.png" alt="html" />
               <img src="../../img/icons/css.png" alt="css" />
               <img src="../../img/icons/javaScript-logo.png" alt="js" />

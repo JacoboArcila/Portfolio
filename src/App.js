@@ -10,6 +10,7 @@ import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 
 import Nav from "./components/Nav/Nav";
+import Footer from './components/Foooter/Footer';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path='/portfolio/projects' element={<Projects />} />
           <Route path='/portfolio/contact' element={<Contact />} />
         </Routes>
+        <Footer />
       </ThemeProvider>
     </BrowserRouter>
   );

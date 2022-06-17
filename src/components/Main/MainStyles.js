@@ -6,11 +6,12 @@ export const Container = styled.div`
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+        margin-bottom: 50px;
 
         hr {
             height: 300px;
             border-color: ${({theme}) => theme.home};
-            margin: 0 20px;
+            margin: 0px 20px;
         }
 
         h1, p {
@@ -36,13 +37,13 @@ export const DivKnowMe = styled.div`
         .titleKnow {
             text-align: center;
             font-size: 40px;
+            margin-bottom: 60px;
         }
     }
 `
 
 export const DivGet = styled.div`
     @media(min-width: 768px) {
-        border: 1px solid red;
         margin: 30px 50px;
         display: flex;
         justify-content: space-evenly;
@@ -51,7 +52,16 @@ export const DivGet = styled.div`
         hr {
             height: 300px;
             border-color: ${({theme}) => theme.home};
-            margin: 0 20px;
+            margin: 0 70px;
+        }
+
+        .text {
+            font-size: 24px;
+            margin-bottom: 80px;
+        }
+
+        .language {
+            font-size: 32px;
         }
     }
 `
