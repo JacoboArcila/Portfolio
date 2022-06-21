@@ -1,9 +1,10 @@
 import React from "react";
+import MainProjects from "../components/ProjectsMain/MainProjects";
 
 function Projects() {
   return (
     <div>
-      <div>Contact</div>
+      <MainProjects />
     </div>
   );
 }
