@@ -1,10 +1,18 @@
 import React from "react";
-import MainProjects from "../components/ProjectsMain/MainProjects";
+import { Container,  Title } from "./ProjectsStyles";
+import ImgProjects from "../img/ImgProjects";
+import Card from "../components/CardProjects/Card";
 
 function Projects() {
   return (
     <div>
-      <MainProjects />
+      <Container>
+        <div>
+          <Title>Projects</Title>
+        </div>
+        <ImgProjects />
+      </Container>
+      <Card />
     </div>
   );
 }
