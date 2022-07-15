@@ -1,19 +1,21 @@
 import React from "react";
-import { Container,  Title } from "./ProjectsStyles";
+import { ContainerProjects,  Title, Container, ContainerCard } from "./ProjectsStyles";
 import ImgProjects from "../img/ImgProjects";
 import Card from "../components/CardProjects/Card";
 
 function Projects() {
   return (
-    <div>
-      <Container>
+    <Container>
+      <ContainerProjects>
         <div>
           <Title>Projects</Title>
         </div>
         <ImgProjects />
-      </Container>
-      <Card />
-    </div>
+      </ContainerProjects>
+      <ContainerCard>
+        <Card />
+      </ContainerCard>
+    </Container>
   );
 }
 

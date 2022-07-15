@@ -1,17 +1,19 @@
 import React from "react";
-import {Container} from "./CardStyles";
+import {Container, Made, Languages, Icon} from "./CardStyles";
 
 const Card = () => {
   return (
     <Container>
-      <h3>Rick and class</h3>
+      <h2>Rick and class</h2>
+      <Made>
       <p>This project is made with:</p>
-      <div>
-        <h4>Html</h4>
-        <h4>Css</h4>
-        <h4>Js</h4>
-        <h4>React</h4>
-      </div>
+        <Languages>
+          <Icon>Html</Icon>
+          <Icon>React</Icon>
+          <Icon>Css</Icon>
+          <Icon>Js</Icon>
+        </Languages>  
+      </Made>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim

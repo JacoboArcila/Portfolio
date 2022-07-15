@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const ContainerProjects = styled.div`
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -26,4 +26,11 @@ export const Button = styled.button`
     &:hover {
         cursor: pointer;
     }
+`
+export const Container = styled.div`
+`
+
+export const ContainerCard = styled.div`
+    display: flex;
+    justify-content: center;
 `
