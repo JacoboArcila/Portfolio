@@ -7,6 +7,8 @@ export const Container = styled.div`
   height: 300px;
   flex-wrap: wrap;
   padding: 10px 20px;
+  margin: 20px 0;
+
   h2 {
     margin: 0 auto;
   }
