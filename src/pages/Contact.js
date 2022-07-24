@@ -5,13 +5,11 @@ import styled from "styled-components";
 const Contact = () => {
   return (
     <ContainerContact>
-      <div>
-        <ImgContact />
-        <hr />
-      </div>
+      <ImgContact />
+      <hr />
       <div>
         <h1>Contact Me</h1>
-        <button>Curriculum Vitae</button>
+        <Button>Curriculum Vitae</Button>
         <div className="icons">
           <svg
             aria-hidden="true"
@@ -50,6 +48,36 @@ const Contact = () => {
               fill="white"
             />
           </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width={36}
+            height={27}
+            viewBox="0 0 36 27"
+            fill="none"
+          >
+            <path
+              d="M2.45453 26.9996H8.18176V13.0939L0 6.95898V24.5456C0 25.9014 1.0984 26.9996 2.45453 26.9996Z"
+              fill="white"
+            />
+            <path
+              d="M27.8182 26.9996H33.5455C34.9016 26.9996 36 25.9014 36 24.5456V6.95898L27.8182 13.0939V26.9996Z"
+              fill="white"
+            />
+            <path
+              d="M27.8182 2.46056V13.0943L36 6.95947V3.68754C36 0.654864 32.5371 -1.07722 30.1091 0.742797L27.8182 2.46056Z"
+              fill="white"
+            />
+            <path
+              fillRule="evenodd"
+              clipRule="evenodd"
+              d="M8.18182 13.0947V2.46094L17.9999 9.82279L27.818 2.46094V13.0947L17.9999 20.4566L8.18182 13.0947Z"
+              fill="white"
+            />
+            <path
+              d="M0 3.68754V6.95947L8.18176 13.0943V2.46056L5.89087 0.742797C3.46293 -1.07722 0 0.654864 0 3.68754Z"
+              fill="white"
+            />
+          </svg>
         </div>
       </div>
     </ContainerContact>
@@ -58,9 +86,32 @@ const Contact = () => {
 
 const ContainerContact = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 
+  hr {
+    height: 200px;
+    border-color: ${({ theme }) => theme.contact};
+  }
+
+  svg {
+    width: 42px;
+    height: 42px;
+    margin-left: 10px;
+  }
+`;
+
+const Button = styled.button`
+  padding: 12px 50px;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 20px auto;
+  background-color: ${({ theme }) => theme.contact};
+  border: none;
+
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 export default Contact;
