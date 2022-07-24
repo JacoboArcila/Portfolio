@@ -62,6 +62,11 @@ export const DivGet = styled.div`
 
         .language {
             font-size: 32px;
+
+            img {
+                width: 30px;
+                height: 30px;
+            }
         }
     }
 `
