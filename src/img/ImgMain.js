@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const Svg = styled.svg`
-    width: 605px;
+    width: 505px;
     height: 565px;
     @media(max-width: 768px) {
         width: 405px;
@@ -14,8 +14,6 @@ const ImgMain = () => {
   return (
     <div>
       <Svg
-        width={405}
-        height={365}
         viewBox="0 0 405 365"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

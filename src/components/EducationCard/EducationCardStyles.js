@@ -5,16 +5,29 @@ export const ContainerEducation = styled.div`
     justify-content: center;
     align-items: center;
     margin: 30px 0;
+
+    @media (max-width: 768px) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 `
 
 export const ContainerText = styled.div`
     border: 1px solid ${({theme}) => theme.education};
     height: 250px;
     margin-left: 60px;
+    @media (max-width: 768px) {
+        margin: 0 auto;
+    }
 `
 
 export const Img = styled.img`
     border-radius: 50%;
+    @media (max-width: 768px) {
+        width: 180px;
+        height: 180px;
+        margin-bottom: 10px;
+    }
 `
 
 export const H1 = styled.h1`

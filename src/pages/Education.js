@@ -7,13 +7,9 @@ const Education = () => {
   return (
     <div>
       <ContainerMain>
-        <ImgEducation />
+        {/* <ImgEducation /> */}
         <DivText>
           <H1>Education</H1>
-          <P>
-            Lorem Ipsum is simply dummy text of the <br /> printing and
-            typesetting industry.{" "}
-          </P>
         </DivText>
       </ContainerMain>
       <Hr />
@@ -25,20 +21,29 @@ const Education = () => {
 
 const ContainerMain = styled.div`
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+  }
 `;
 
 const DivText = styled.div`
-  margin-right: 100px;
+  margin: 0 auto;
+
+  @media (max-width: 768px) {
+    margin: 0;
+  }
 `;
 
 const H1 = styled.h1`
-  margin-bottom: 280px;
-`;
-
-const P = styled.p`
-  margin-top: -200px;
+  text-align: center;
+  margin: 50px 0;
+  @media (max-width: 768px) {
+    margin-bottom: 50px;
+    text-align: center;
+  }
 `;
 
 const Hr = styled.hr`
@@ -47,7 +52,7 @@ const Hr = styled.hr`
   align-items: center;
   margin: 0 auto;
   width: 500px;
-  border-color: ${({theme}) => theme.education};
+  border-color: ${({ theme }) => theme.education};
 `;
 
 export default Education;

@@ -1,19 +1,24 @@
 import React from "react";
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const Svg = styled.svg`
-  width: 469px;
-  height: 482px;
-`
+  /* width: 469px;
+  height: 482px; */
+  width: 505px;
+  height: 565px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  @media (max-width: 768px) {
+    width: 405px;
+    height: 365px;
+  }
+`;
 
 const KnowMe = () => {
   return (
     <div>
-      <Svg
-        viewBox="0 0 369 382"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
+      <Svg viewBox="0 0 369 382" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M352.568 78.2245L350.373 74.464C331.773 42.747 298.14 23.634 262.685 25.9455C258.122 26.2445 253.585 26.8902 249.111 27.8775C216.882 35.019 188.834 60.25 177.203 92.5535C170.366 111.551 168.424 133.436 155.487 148.513C138.599 168.143 109.925 168.752 84.7195 167.947C59.5137 167.143 30.8294 167.821 14.0183 187.497C3.44001 199.871 0.148012 217.42 0.992958 233.9C3.18762 277.6 32.6949 316.78 70.1249 336.25C107.555 355.719 151.712 357.433 192.719 348.9C250.175 336.917 304.812 304.05 337.644 253.174C370.476 202.298 378.838 133.091 352.568 78.2245Z"
           fill="#E0E0E0"

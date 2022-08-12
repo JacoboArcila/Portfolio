@@ -2,8 +2,10 @@ import styled from "styled-components";
 
 export const ContainerProjects = styled.div`
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
+    
 `
 
 export const Input = styled.input`
@@ -13,6 +15,10 @@ export const Input = styled.input`
 
 export const Title = styled.h1`
     display: block;
+    margin: 30px 0;
+    @media (max-width: 768px) {
+        margin-top: 10px;
+    }
 `
 
 export const Button = styled.button`

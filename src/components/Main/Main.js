@@ -23,7 +23,7 @@ const Main = () => {
           <KnowMe />
           <hr />
           <div>
-            <p className="text">
+            <p className="textBio">
               🔥 Lorem Ipsum is simply dummy text of the printing and
               typesetting industry. Lorem Ipsum has been the industry's standard
               dummy text ever since the 1500s, when an unknown printer took a
@@ -31,51 +31,44 @@ const Main = () => {
             </p>
             <div>
               <h3 className="language">Language and Tools</h3>
-              <img
-                style={{ width: "30px", height: "30px" }}
-                src="https://cdn-icons-png.flaticon.com/512/732/732212.png"
-                alt="html"
-              />
-              <img
-                style={{ width: "30px", height: "30px" }}
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png"
-                alt="css"
-              />
-              <img
-                style={{ width: "30px", height: "30px" }}
-                src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
-                alt="js"
-              />
-              <img
-                style={{ width: "30px", height: "30px" }}
-                src="https://sass-lang.com/assets/img/styleguide/seal-color-reversed-c50d9b78.png"
-                alt="sass"
-              />
-              <img
-                style={{ width: "30px", height: "30px" }}
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
-                alt="react"
-              />
-              <img
-                style={{ width: "30px", height: "30px" }}
-                src="https://cdn-icons-png.flaticon.com/512/5968/5968322.png"
-                alt="node"
-              />
-              <img
-                style={{ width: "30px", height: "30px" }}
-                src="https://iconape.com/wp-content/png_logo_vector/git-icon.png"
-                alt="git"
-              />
-              <img
-                style={{ width: "30px", height: "30px" }}
-                src="https://uxwing.com/wp-content/themes/uxwing/download/10-brands-and-social-media/postman.png"
-                alt="postMan"
-              />
-              <img
-                style={{ width: "30px", height: "30px" }}
-                src="https://cdn-icons-png.flaticon.com/512/226/226777.png"
-                alt="java"
-              />
+              <div className="containerIcons">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/732/732212.png"
+                  alt="html"
+                />
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png"
+                  alt="css"
+                />
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+                  alt="js"
+                />
+                <img
+                  src="https://sass-lang.com/assets/img/styleguide/seal-color-reversed-c50d9b78.png"
+                  alt="sass"
+                />
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
+                  alt="react"
+                />
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/5968/5968322.png"
+                  alt="node"
+                />
+                <img
+                  src="https://iconape.com/wp-content/png_logo_vector/git-icon.png"
+                  alt="git"
+                />
+                <img
+                  src="https://seeklogo.com/images/P/postman-logo-0087CA0D15-seeklogo.com.png"
+                  alt="postMan"
+                />
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/226/226777.png"
+                  alt="java"
+                />
+              </div>
             </div>
           </div>
         </DivGet>

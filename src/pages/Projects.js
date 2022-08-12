@@ -10,7 +10,7 @@ function Projects() {
         <div>
           <Title>Projects</Title>
         </div>
-        <ImgProjects />
+        {/* <ImgProjects /> */}
       </ContainerProjects>
       <ContainerCard>
         <Card />

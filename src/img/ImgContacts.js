@@ -1,18 +1,19 @@
-import React from "react";
+import React from 'react'
 import styled from "styled-components";
 
 const Svg = styled.svg`
-  width: 505px;
-  height: 565px;
-  @media (max-width: 768px) {
-    width: 405px;
-    height: 365px;
-  }
-`;
+    width: 505px;
+    height: 565px;
+    @media(max-width: 768px) {
+        width: 405px;
+        height: 365px;
+    }
+`
 
-const ImgContact = () => {
+const ImgContacts = () => {
   return (
-    <Svg
+    <div>
+      <Svg
       className="animated"
       id="freepik_stories-messaging-fun"
       xmlns="http://www.w3.org/2000/svg"
@@ -21,6 +22,7 @@ const ImgContact = () => {
       xmlnsXlink="http://www.w3.org/1999/xlink"
     >
     <p>hola</p>
+
       <style
         dangerouslySetInnerHTML={{
           __html:
@@ -1887,7 +1889,8 @@ const ImgContact = () => {
         </filter>
       </defs>
     </Svg>
-  );
-};
+    </div>
+  )
+}
 
-export default ImgContact;
+export default ImgContacts

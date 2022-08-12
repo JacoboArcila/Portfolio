@@ -1,10 +1,19 @@
 import React from "react";
+import styled from "styled-components";
+
+const Svg = styled.svg`
+    width: 505px;
+    height: 565px;
+    @media(max-width: 768px) {
+        width: 405px;
+        height: 365px;
+    }
+`
 
 const ImgEducation = () => {
   return (
     <div>
-      <svg
-        style={{"width": "600px", "height": "600px"}}
+      <Svg
         className="animated"
         id="freepik_stories-happy-student"
         xmlns="http://www.w3.org/2000/svg"
@@ -2244,7 +2253,7 @@ const ImgEducation = () => {
             />{" "}
           </filter>
         </defs>
-      </svg>
+      </Svg>
     </div>
   );
 };

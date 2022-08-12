@@ -57,6 +57,7 @@ export const Button = styled.button`
     border-bottom: 2px solid ${({color, theme}) => color ? color : theme.home};
     border-radius: 5px;
     margin: 0 auto;
+    background-color: ${({theme}) => theme.background};
     background-image: -webkit-linear-gradient(45deg, ${({color, theme}) => color ? color : theme.home} 50%, transparent 50%);
     background-image: linear-gradient(45deg, ${({color, theme}) => color ? color : theme.home} 50%, transparent 50%);
     background-position: 100%;
