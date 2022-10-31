@@ -4,6 +4,8 @@ export const Container = styled.div`
     display: flex;
     justify-content: space-between;
     padding: 20px 50px;
+    /* position: fixed; */
+    color: white;
 
     @media(max-width: 768px) {
         transition: all .8s ease;
@@ -39,11 +41,17 @@ export const Container = styled.div`
             left: 0px;
             text-align: center;
             z-index: 0;
+            display: flex !important;
+            flex-direction: column;
         }
     }
     
     .link {
         text-decoration: none;
+    }
+
+    .title {
+        color: white;
     }
 
 `
@@ -67,7 +75,7 @@ export const Button = styled.button`
     -moz-box-shadow: 0px 0px 17px -4px ${({color, theme}) => color ? color : theme.home};
     box-shadow: 0px 0px 17px -4px ${({color, theme}) => color ? color : theme.home};
     transition: background 400ms ease-in-out;
-
+    color: white;
     @media(min-width: 768px) {
         margin: 2px 10px;
         position: initial;

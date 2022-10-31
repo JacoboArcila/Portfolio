@@ -1,12 +1,16 @@
 import React from "react";
 import ImgMain from "../../img/ImgMain";
 import KnowMe from "../../img/KnowMe";
-import { Container, DivKnowMe, DivGet } from "./MainStyles";
+import { Container, DivKnowMe, DivGet, DivTitle } from "./MainStyles";
+import { motion } from "framer-motion";
+import "./MainStyles.css";
+import llorando from '../../img/images/real.jpeg'
+import FormContact from "../Form/FormContact";
 
 const Main = () => {
   return (
     <div>
-      <Container>
+      {/* <Container>
         <div>
           <h1 className="hello">Hello! 👋</h1>
           <p className="text">
@@ -15,19 +19,82 @@ const Main = () => {
         </div>
         <hr />
         <ImgMain />
-      </Container>
+      </Container> */}
 
       <DivKnowMe>
-        <h2 className="titleKnow">Get to know me</h2>
-        <DivGet>
+        {/* <h2 className="titleKnow">Get to know me</h2> */}
+        <div className="titleKnows">
+          <motion.h2
+            className="titleKnow-title"
+            animate={{
+              color: ["#C586C0", "#fff", "#C586C0"],
+              textShadow: [
+                "-1px 0px 10px rgba(197,134,192,1)",
+                "-1px 0px 10px rgba(255,255,255,1)",
+                "-1px 0px 10px rgba(197,134,192,1)",
+              ],
+            }}
+            transition={{ duration: 3, repeat: Infinity, repeatDelay: 4 }}
+          >
+            Sobre
+          </motion.h2>
+          <motion.h2
+            className="titleKnow-title"
+            animate={{
+              color: ["#C586C0", "#fff", "#C586C0"],
+              textShadow: [
+                "-1px 0px 10px rgba(197,134,192,1)",
+                "-1px 0px 10px rgba(255,255,255,1)",
+                "-1px 0px 10px rgba(197,134,192,1)",
+              ],
+            }}
+            transition={{
+              duration: 3,
+              repeat: Infinity,
+              repeatDelay: 4,
+              delay: 4,
+            }}
+          >
+            Mi
+          </motion.h2>
+        </div>
+        <div className="containerBox">
+          <div className="mainBox">
+            {/* <p className="mainBox-text">02</p> */}
+            <img className="mainBox-img" src={llorando} alt="" />
+          </div>
+          <div className="textBox">
+            <p>
+              Mi vocación por el desarrollo web ha surgido desde que conozco un
+              computador. Durante los estudios medios -bachillerato- me incliné
+              por el Front-end. Aquí fuí reconocido como el mejor desarrollador
+              de la modalidad. Durante mi primer año en Dígital House desarrollé
+              la siguientes habilidades, además de las técnicas:
+              <br />
+              <span className="textBox-list">
+                - Sensibilidad estética en diseño web
+                <br />
+                - Comunicación efectiva como lider de equipo
+                <br />
+                - Resolución de problemas de manera democratizada
+                <br />
+                - Consciencia del valor del tiempo y de su optimización.
+                <br />
+                - Disponibilidad al aprendizaje constante
+                <br />
+              </span>
+            </p>
+          </div>
+        </div>
+        <FormContact />
+        {/* <DivGet>
           <KnowMe />
           <hr />
           <div>
             <p className="textBio">
-              🔥 Lorem Ipsum is simply dummy text of the printing and
-              typesetting industry. Lorem Ipsum has been the industry's standard
-              dummy text ever since the 1500s, when an unknown printer took a
-              galley of type and scrambled it to make a type specimen book
+              Apasionado de React,
+              <br />
+              🔥 Creating a responsive page using React / Redux / HTML / CSS 🔥
             </p>
             <div>
               <h3 className="language">Language and Tools</h3>
@@ -71,7 +138,7 @@ const Main = () => {
               </div>
             </div>
           </div>
-        </DivGet>
+        </DivGet> */}
       </DivKnowMe>
     </div>
   );

@@ -1,22 +1,24 @@
 import styled from 'styled-components';
 
 export const ContainerFooter = styled.div`
-    background-color: ${({theme}) => theme.footer};
+    background-color: #141414;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     padding: 40px;
     
     h5 {
-        background-color: ${({theme}) => theme.footer};
+        background-color: #141414;
         font-size: 24px;
+        color: white;
     }
 
     .containerIcons {
-        background-color: ${({theme}) => theme.footer};
+        background-color: #141414;
     }
 
     svg {
-        background-color: ${({theme}) => theme.footer};
+        background-color: #141414;
         width: 42px;
         height: 42px;
         margin: 0 30px;

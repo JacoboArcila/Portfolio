@@ -1,6 +1,18 @@
 import styled from "styled-components";
 
+export const DivTitle = styled.div`
+  .title-front {
+    color: black;
+  }
+
+  h1 {
+    font-size: 100px;
+  }
+`
+
 export const Container = styled.div`
+  /* background-color: white;
+  color: black; */
   @media (max-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -68,6 +80,8 @@ export const DivKnowMe = styled.div`
       margin: 30px 0;
     }
 
+    
+
     hr {
       width: 300px;
       border-color: ${({ theme }) => theme.home};
@@ -107,6 +121,19 @@ export const DivKnowMe = styled.div`
       text-align: center;
       font-size: 40px;
       margin-bottom: 0px;
+    }
+
+    .titleKnows {
+      margin-top: 35px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 40px;
+    }
+
+    .titleKnow-title {
+      padding: 10px 12px;
     }
   }
 `;
