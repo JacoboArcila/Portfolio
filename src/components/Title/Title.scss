@@ -25,6 +25,16 @@ html {
 
 /*-- Sign Styles --*/
 
+@font-face {
+  font-family: neon;
+  src: url(../../assets/Neonderthaw-Regular.ttf);
+}
+
+@font-face {
+  font-family: neon6;
+  src: url(../../assets/NEONLEDLight.otf);
+}
+
 .sign {
   min-height: 100%;
   display: flex;
@@ -35,11 +45,12 @@ html {
   padding: 30vh 0 30vh 0;
 
   span {
-    font-size: 5.6rem;
+    font-size: 6.6rem;
     text-align: center;
     line-height: 1;
     color: #c6e2ff;
     animation: neon .08s ease-in-out infinite alternate;
+    font-family: neon;
   }
 
 }

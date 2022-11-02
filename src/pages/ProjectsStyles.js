@@ -46,4 +46,5 @@ export const Container = styled.div`
 export const ContainerCard = styled.div`
   display: flex;
   justify-content: center;
+  gap: 70px;
 `;

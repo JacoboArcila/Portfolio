@@ -2,18 +2,25 @@ import React from "react";
 import { ContainerProjects,  Title, Container, ContainerCard } from "./ProjectsStyles";
 import ImgProjects from "../img/ImgProjects";
 import Card from "../components/CardProjects/Card";
+import CardNeon from "../components/CardNeon/CardNeon";
 
 function Projects() {
   return (
     <Container>
       <ContainerProjects>
         <div>
-          <Title>Projects</Title>
+          {/* <Title>Projects</Title> */}
+          <div class="signnn">
+            <span>Projects</span>
+          </div>
         </div>
         {/* <ImgProjects /> */}
       </ContainerProjects>
       <ContainerCard>
-        <Card />
+      <CardNeon />
+      <CardNeon />
+      <CardNeon />
+        {/* <Card /> */}
       </ContainerCard>
     </Container>
   );

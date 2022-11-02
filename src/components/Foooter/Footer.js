@@ -5,7 +5,7 @@ import "./FooterStyles.css";
 const Footer = () => {
   return (
     <ContainerFooter>
-      <h5>Made width ❤ by Jacobo</h5>
+      <h5>Made with ❤ by Jacobo</h5>
       <div className="containerIcons">
         <div className="container">
           <div className="btn fb-btn">
