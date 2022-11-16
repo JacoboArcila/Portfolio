@@ -4,7 +4,7 @@ import "./CardNeonStyles.scss";
 
 const CardNeon = () => {
   return (
-    <div>
+    <div className="containerAllNeon">
       <ContainerCardNeon>
         <div>
           
@@ -23,8 +23,8 @@ const CardNeon = () => {
           </p>
         </div>
         <div className="card-links">
-          <button>GitHub</button>
-          <button>Page</button>
+          <button className="card-button">GitHub</button>
+          <button className="card-button">Page</button>
         </div>
       </ContainerCardNeon>
     </div>

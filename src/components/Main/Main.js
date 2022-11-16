@@ -27,11 +27,11 @@ const Main = () => {
           <motion.h2
             className="titleKnow-title"
             animate={{
-              color: ["#C586C0", "#fff", "#C586C0"],
+              color: ["rgba(30,132,242,0.52)", "#fff", "rgba(30,132,242,0.52)"],
               textShadow: [
-                "-1px 0px 10px rgba(197,134,192,1)",
+                "-1px 0px 10px rgba(30,132,242,0.78)",
                 "-1px 0px 10px rgba(255,255,255,1)",
-                "-1px 0px 10px rgba(197,134,192,1)",
+                "-1px 0px 10px rgba(30,132,242,0.78)",
               ],
             }}
             transition={{ duration: 3, repeat: Infinity, repeatDelay: 4 }}
@@ -41,11 +41,11 @@ const Main = () => {
           <motion.h2
             className="titleKnow-title"
             animate={{
-              color: ["#C586C0", "#fff", "#C586C0"],
+              color: ["rgba(30,132,242,0.52)", "#fff", "rgba(30,132,242,0.52)"],
               textShadow: [
-                "-1px 0px 10px rgba(197,134,192,1)",
+                "-1px 0px 10px rgba(30,132,242,0.78)",
                 "-1px 0px 10px rgba(255,255,255,1)",
-                "-1px 0px 10px rgba(197,134,192,1)",
+                "-1px 0px 10px rgba(30,132,242,0.78)",
               ],
             }}
             transition={{

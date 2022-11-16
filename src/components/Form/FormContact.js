@@ -67,7 +67,7 @@ const FormContact = () => {
                 label="Mensaje"
                 multiline
                 fullWidth
-                maxRows={4}
+                rows={4}
                 variant="outlined"
                 name="mensaje"
               />

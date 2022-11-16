@@ -33,7 +33,7 @@
     border-radius: 10px;
 }
 
-.mainBox::before {
+/* .mainBox::before {
     content: '';
     position: absolute;
     width: 300px;
@@ -56,7 +56,7 @@
     100% {
         transform: rotate(360deg);
     }
-}
+} */
 
 .mainBox p {
     position: relative;

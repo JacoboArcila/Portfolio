@@ -10,8 +10,8 @@ function Projects() {
       <ContainerProjects>
         <div>
           {/* <Title>Projects</Title> */}
-          <div class="signnn">
-            <span>Projects</span>
+          <div className="signnn">
+            <span style={{"fontFamily": "neon6", "margin": "2rem"}}>Projects</span>
           </div>
         </div>
         {/* <ImgProjects /> */}
