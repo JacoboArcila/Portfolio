@@ -69,16 +69,16 @@ export const Container = styled.div`
 
 export const DivKnowMe = styled.div`
   @media (max-width: 768px) {
-    display: flex;
+   /*  display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-
-    .titleKnow {
+ */
+  /*   .titleKnow {
       text-align: center;
       font-size: 30px;
       margin: 30px 0;
-    }
+    } */
 
     
 
@@ -113,27 +113,6 @@ export const DivKnowMe = styled.div`
       flex-wrap: wrap;
       margin: 10px 30px;
       gap: 10px;
-    }
-  }
-
-  @media (min-width: 768px) {
-    .titleKnow {
-      text-align: center;
-      font-size: 40px;
-      margin-bottom: 0px;
-    }
-
-    .titleKnows {
-      margin-top: 35px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      font-size: 40px;
-    }
-
-    .titleKnow-title {
-      padding: 10px 12px;
     }
   }
 `;

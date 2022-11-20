@@ -16,7 +16,7 @@ const Nav = () => {
     <div>
       <Container className={`${active ? "activeCompo" : ""}`}>
         {/* <h1 className="title">&lt;JacoboArcila /&gt; </h1> */}
-        <h1 className="title-main-h1" contentEditable spellcheck="false">Jacobo</h1>
+        <h1 className="title-main-h1" spellcheck="false">Jacobo</h1>
         <div className={`containerButton ${active ? "active" : ""}`}>
           <Link className="link" to="/portfolio">
             <button className="main-div main-div2" ><h1 className="title-button">Home</h1></button>

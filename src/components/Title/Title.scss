@@ -79,3 +79,19 @@ html {
     0 0 60px rgba(30,132,242,1);
   }
 }
+
+@media (max-width: 768px) {
+  .sign {
+    span {
+      font-size: 5.5rem;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .sign {
+    span {
+      font-size: 3.8rem;
+    }
+  }
+}

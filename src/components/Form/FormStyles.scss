@@ -57,7 +57,7 @@
 .containerForm {
   padding: 30px 30px;
   margin: 30px auto;
-  width: 500px;
+  width: 50%;
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
 }
@@ -85,4 +85,36 @@
 .containerForm-button:hover {
   background-color: rgba(68, 28, 242, 1);
   scale: 1.1;
+}
+
+
+@media (max-width: 768px) {
+  .titleContact {
+    span {
+      font-size: 4.6rem;
+      
+    }
+  }
+
+  .containerForm {
+    width: 80%;
+  }
+}
+
+@media (max-width: 576px) {
+  .titleContact {
+    span {
+      font-size: 3.7rem;
+      
+    }
+  }
+}
+
+@media (max-width: 374px) {
+  .titleContact {
+    span {
+      font-size: 2.7rem;
+      
+    }
+  }
 }

@@ -25,10 +25,9 @@ export const ContainerFooter = styled.div`
     }
 
     @media (max-width: 768px) {
+        flex-direction: column;
+        gap: 50px;
         h5 {
-            background-color: ${({theme}) => theme.footer};
-            font-size: 18px;
-            width: 100px;
         }
         svg {
             width: 22px;
