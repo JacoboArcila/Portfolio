@@ -2,29 +2,27 @@ import React from "react";
 import { ContainerCardNeon } from "./CardNeonStyles";
 import "./CardNeonStyles.scss";
 
-const CardNeon = () => {
+const CardNeon = ({card}) => {
   return (
     <div className="containerAllNeon">
       <ContainerCardNeon>
-        <div>
-          
+        <div className="card-title">
+          <h2>{card.title}</h2>
         </div>
         <div className="card-img">
           <img
-            src="https://www.comparapps.com/wp-content/uploads/2019/08/Como-Crear-Una-Pagina-Web.jpg"
+            src={card.img}
             alt="web"
           />
         </div>
         <div className="card-body">
           <p>
-            Proident consequat officia amet enim velit. Esse non anim sunt irure
-            duis do dolore nisi. Excepteur consectetur et qui laboris veniam
-            consequat ex elit laboris Lorem nostrud incididunt ullamco mollit.
+            {card.info}
           </p>
         </div>
         <div className="card-links">
-          <button className="card-button">GitHub</button>
-          <button className="card-button">Page</button>
+        <a href={card.github}><button className="card-button">GitHub</button></a>
+        <a href={card.page}> <button className="card-button">Page</button></a>
         </div>
       </ContainerCardNeon>
     </div>
