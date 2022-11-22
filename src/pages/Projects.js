@@ -5,7 +5,6 @@ import {
   Container,
   ContainerCard,
 } from "./ProjectsStyles";
-import ImgProjects from "../img/ImgProjects";
 import CardNeon from "../components/CardNeon/CardNeon";
 import projectsInfo from "../assets/projectsInfo.json";
 
